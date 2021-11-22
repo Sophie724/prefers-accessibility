@@ -58,8 +58,27 @@ html {
   100% {
     transform: rotate(360deg);
   }
-
 }
+
+  @media (prefers-color-scheme: dark) {
+   body {
+     background-color: #111;
+   }
+
+   banner {
+     background-color: #333;
+   }
+
+   h1 {
+     color: #ccc;
+   }
+ }
+
+ @media (prefers-reduced-motion) {
+   .ball {
+     animation: none;
+   }
+ }
 
 /* stylelint-disable media-feature-name-no-unknown */
 
